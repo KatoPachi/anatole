@@ -14,7 +14,7 @@
             {{ if (eq .Site.Params.disableArchiveTitleStyling true) }}
               <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a>
             {{ else }}
-              <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ upper .Title }}</a>
+              <a class="archive__list-title" href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Title }}</a>
             {{ end }}
             <div class="archive__list-date">
               {{ if isset .Site.Params "listdateformat" }}
